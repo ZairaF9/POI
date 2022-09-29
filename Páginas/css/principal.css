@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa');
+
+header{
+    background: #264b79;
+    font-family: 'Changa', sans-serif;
+}
+
+#btn-search{
+    position: absolute;
+    
+}
+
+body{
+    background: #203349 !important;
+}
+
+li:hover{
+background: rgb(117, 150, 201);
+}
+
+#btn_add_grupo{
+    background:#0f1f31; 
+    border:none; 
+    color:#fff;
+}
+
+#btn_add_grupo:hover{
+    background:rgb(117, 150, 201);
+}
+
+h5,h6{
+    font-family: 'Changa', sans-serif;
+}
+
+.card{
+    background:rgb(172, 191, 221) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card:hover{
+    background:rgb(107, 125, 155) !important;
+    cursor:pointer;
+}
+
+.modal{
+    width:100%;
+    height:100%;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal .carta{
+    background: #fff;
+    width: 50rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.modal .carta #btn-close{
+    position: absolute;
+    top:2rem;
+    right:2rem;
+    font-size: 1.3rem;
+}
+
+.modal .carta .brand{
+    width:30rem;
+}
+
+.modal .carta .brand img{
+    display: block;
+    width: 100%;
+}
+
+.modal .carta .h2{
+    margin-bottom: 2rem;
+}
+
+.modal .carta form{
+    margin-top: 2rem;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+}
+
+.modal .carta input[type="text"],.modal .carta select{
+    background: #eee;
+    width: 100%;
+    border: none;
+    outline: none;
+   padding: 0 1.6rem;
+   margin: 1rem 0;
+}
+
+.modal .carta input[type="submit"]{
+    background:#0f1f31; 
+    font-family: 'Changa', sans-serif;
+    color:#fff;
+    border: none;
+    padding: 0 1.6rem;
+}
+
+.modal .carta input[type="submit"]:hover{
+    background:rgb(117, 150, 201);
+}
+
+.modal .carta option:hover{
+    background: #000;
+}
+
+/*Media queries*/
+
+@media screen and (max-width:800px){
+    .modal .carta{
+       flex-direction: column;
+       width: 80vw;
+       text-align: center;
+    }
+ 
+    .modal .carta .brand{
+        width:15rem;
+        height: 15rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 4rem;
+    }
+
+    .modal .carta form{
+       display: block;
+    }
+    
+    .modal .carta input[type="text"],.modal .carta form input[type="text"]::placeholder{
+     text-align: center;
+    }
+    
+    .modal .carta input[type="submit"]{
+       display: block;
+       width: 100%;
+       padding: 1rem 0;
+       margin-top: 0.6rem;
+    }
+}
