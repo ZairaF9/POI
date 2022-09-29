@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat</title>
+        <link rel="stylesheet" href="css/chat.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            crossorigin="anonymous">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <form class="d-flex col-7 mx-auto" role="search">
+                        <input class="form-control me-2" type="search" placeholder="      Buscar" aria-label="Search">
+                        <button class="btn" id="btn-search" type="submit">
+                            <i class='bx bx-search'></i>
+                        </button>
+                    </form>
+                    <div class="dropdown text-end" style="position:absolute; left:90%;">
+                        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="images/perfil.png" alt="mdo" width="35" height="35" class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu text-small">
+                            <li><a class="dropdown-item" href="/Pages/mi_perfil_cliente_editarPerfil.html">Perfil</a></li>
+                            <li><a class="dropdown-item" href="/Pages/login.html">Cerrar Sesión</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+        <main class="d-flex flex-nowrap">
+            <div class="d-flex flex-column flex-shrink-0 position-fixed"
+                style="width: 4.5rem; height:100vh;background: #0f1f31;" id="sidebar_user">
+                <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                    <li class="nav-item my-4">
+                        <a href="#" class="nav-link py-3  rounded-0" aria-current="page" title="Chat"
+                            data-bs-toggle="tooltip" data-bs-placement="right">
+                            <i class='bx bxs-chat' style="color:#fff"></i>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <a href="#" class="nav-link py-3  rounded-0" title="Tareas" data-bs-toggle="tooltip"
+                            data-bs-placement="right">
+                            <i class='bx bxs-backpack' style="color:#fff"></i>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <a href="#" class="nav-link py-3 rounded-0" title="Llamadas" data-bs-toggle="tooltip"
+                            data-bs-placement="right">
+                            <i class='bx bxs-phone' style="color:#fff"></i>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <a href="#" class="nav-link py-3  rounded-0" title="Recompensas" data-bs-toggle="tooltip"
+                            data-bs-placement="right">
+                            <i class='bx bxs-trophy' style="color:#fff"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <section class="py-5">
+            <div class="container" id="container">
+                <div class="row no-gutters">
+                    <div class="col-md-4 border-right">
+                      <div class="settings-tray">
+                        <img class="profile-image" src="images/grupo6.png" alt="Profile img">
+                        <span class="settings-tray--right">
+                          <i class='bx bxs-message-add'></i>
+                          <i class='bx bx-menu' ></i>
+                        </span>
+                      </div>
+                      <div class="friend-drawer friend-drawer--onhover">
+                        <img class="profile-image" src="images/grupo2.jpg" alt="">
+                        <div class="text">
+                          <h6>Kagamine Len</h6>
+                          <p class="text-muted">Hey,I wanna sing!</p>
+                        </div>
+                        <span class="time text-muted small">15:21</span>
+                      </div>
+                      <hr>
+                      <div class="friend-drawer friend-drawer--onhover">
+                        <img class="profile-image" src="images/grupo5.jpg" alt="">
+                        <div class="text">
+                          <h6>Kagamine Rin</h6>
+                          <p class="text-muted">Wanna dance?</p>
+                        </div>
+                        <span class="time text-muted small">00:32</span>
+                      </div>
+                      <hr>
+                      <div class="friend-drawer friend-drawer--onhover ">
+                        <img class="profile-image" src="images/grupo3.jfif" alt="">
+                        <div class="text">
+                          <h6>Shion Kaito</h6>
+                          <p class="text-muted">See that rose?</p>
+                        </div>
+                        <span class="time text-muted small">13:21</span>
+                      </div>
+                      <hr>
+                      <div class="friend-drawer friend-drawer--onhover">
+                        <img class="profile-image" src="images/grupo4.jfif" alt="">
+                        <div class="text">
+                          <h6>Megurine Luka</h6>
+                          <p class="text-muted">Im practicing guitar</p>
+                        </div>
+                        <span class="time text-muted small">18:30</span>
+                      </div>
+                      <hr>
+                      <div class="friend-drawer friend-drawer--onhover">
+                        <img class="profile-image" src="images/grupo1.jfif" alt="">
+                        <div class="text">
+                          <h6>Haigo Meiko</h6>
+                          <p class="text-muted">I'm not sure...</p>
+                        </div>
+                        <span class="time text-muted small">20:00</span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="settings-tray">
+                          <div class="friend-drawer no-gutters friend-drawer--grey">
+                          <img class="profile-image" src="images/grupo2.jpg" alt="">
+                          <div class="text">
+                            <h6>Kagamine Len</h6>
+                            <p class="text-muted">Feeling the song, bright as the sunshine</p>
+                          </div>
+                          <span class="settings-tray--right">
+                           <i class='bx bxs-video'></i>
+                            <i class='bx bx-menu'></i>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="chat-panel">
+                        <div class="row no-gutters">
+                          <div class="col-md-3">
+                            <div class="chat-bubble chat-bubble--left">
+                              Hello dude!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row no-gutters">
+                          <div class="col-md-3 offset-md-9">
+                            <div class="chat-bubble chat-bubble--right">
+                              Hello dude!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row no-gutters">
+                          <div class="col-md-3 offset-md-9">
+                            <div class="chat-bubble chat-bubble--right">
+                              Hello dude!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row no-gutters">
+                          <div class="col-md-3">
+                            <div class="chat-bubble chat-bubble--left">
+                              Hello dude!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row no-gutters">
+                          <div class="col-md-3">
+                            <div class="chat-bubble chat-bubble--left">
+                              Hello dude!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row no-gutters">
+                          <div class="col-md-3">
+                            <div class="chat-bubble chat-bubble--left">
+                              Hello dude!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row no-gutters">
+                          <div class="col-md-3 offset-md-9">
+                            <div class="chat-bubble chat-bubble--right">
+                              Hello dude!
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="chat-box-tray">
+                              <input type="text" placeholder="Escribe un mensaje nuevo...">
+                              <button id="btn-multimedia">
+                              <i class='bx bx-paperclip' ></i>
+                              </button>
+                              <button id="btn-enviarm">
+                              <i class='bx bxs-send' ></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    </body>
+</html>
