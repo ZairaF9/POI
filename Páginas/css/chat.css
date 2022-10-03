@@ -11,7 +11,7 @@ header{
 }
 
 body{
-    background: #203349 !important;
+    background: rgb(216, 221, 228) !important;
 }
 
 li:hover{
@@ -22,190 +22,59 @@ h5,h6{
     font-family: 'Changa', sans-serif;
 }
 
-section{
-    height: 101vh;
-    width: 190vh;
-    position: absolute;
-    left:4%;
-    top:-5%;
+#chat-friends:hover{
+background: rgb(185, 194, 209);
 }
-.container {
-    margin: 60px auto;
-    background: #fff;
-    padding: 0;
-    height: 100%;
-    border-radius: 7px;
+
+.chat-online {
+    color: #34ce57
 }
-  
-  .profile-image {
-    width: 50px;
-    height: 50px;
-    border-radius: 40px;
-  }
-  
-  .settings-tray {
-    background: #eee;
-    padding: 10px 15px;
-    border-radius: 7px;
-  }
 
-  .settings-tray .no-gutters{
-    padding:0;
-  }
+.chat-offline {
+    color: #e4606d
+}
 
-  .settings-tray--right{
-    float: right;
-  }
-
-  .settings-tray--right i {
-    margin-top: 10px;
-    font-size: 25px;
-    color: grey;
-    margin-left: 14px;
-    transition: .3s;
-  }
-
-  .settings-tray--right  i:hover {
-    color: rgb(153, 206, 250);
-    cursor: pointer;
-  }
-  
-  .search-box {
-    background: #fafafa;
-    padding: 10px 13px;
-  }
-
-  .search-box .input-wrapper {
-    background: #fff;
-    border-radius: 40px;
-  }
-
-  .search-box .input-wrapper i {
-    color: grey;
-    margin-left: 7px; 
-    vertical-align: middle;
-  }
-  
-  input {
-    border: none;
-    border-radius: 30px;
-    width: 80%;
-  }
-  
-  input::placeholder{
-    color: #e3e3e3;
-    font-weight: 300;
-    margin-left: 20px;
-  }
-
-  input:focus{
-    outline: none;
-  }
-
-  .friend-drawer {
-    padding: 10px 15px;
+.chat-messages {
     display: flex;
-    vertical-align: baseline;
-    background: #fff;
-    transition: .3s ease;
-  }
+    flex-direction: column;
+    max-height: 800px;
+    overflow-y: scroll
+}
 
-  .friend-drawer--grey{
-    background: #eee;
-  }
-
-  .friend-drawer .text {
-    margin-left: 12px;
-    width: 70%;
-  }
-
-  .friend-drawer .text h6 {
-      margin-top: 6px;
-      margin-bottom: 0;
-    }
-    
-  .friend-drawer .text p {
-      margin: 0;
-  }
-  
-  .friend-drawer .time {
-    color: gray;
-  }
-  
-  .friend-drawer--onhover:hover {
-    background:rgba(176, 208, 250,0.5);
-    cursor: pointer;
-  }
-
-  .friend-drawer--onhover:hover p,.friend-drawer--onhover:hover h6,.friend-drawer--onhover:hover.time {
-      color: rgb(5, 5, 5) !important;
-    }
-  
-  hr {
-    margin: 5px auto;
-    width: 60%;
-  }
-  
-  .chat-bubble {
-    padding: 10px 14px;
-    background: #eee;
-    margin: 10px 30px;
-    border-radius: 9px;
-    position: relative;
-    animation: fadeIn 1s ease-in;
-  }
-
-  .chat-bubble::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border: 20px solid transparent;
-    border-bottom: 0;
-    margin-top: -10px;
-  }
-
-  @keyframes fadeIn {
-      0% {
-          opacity: 0;
-      }
-      100% {
-          opacity: 1;
-      }
-  }
-  
-  
-  .offset-md-9 .chat-bubble {
-      background: rgb(155, 201, 238);
-      color: #fff;
-  }
-  
-  .chat-box-tray {
-    background: #eee;
+.chat-message-left,
+.chat-message-right {
     display: flex;
-    align-items: baseline;
-    padding: 10px 15px;
-    align-items: center;
-    margin-top: 270px;
-    bottom: 0;
-  }
+    flex-shrink: 0
+}
 
-  .chat-box-tray input {
-    margin: 0 10px;
-    padding: 6px 2px;
-  }
+.chat-message-left {
+    margin-right: auto
+}
 
-  .chat-box-tray i {
-    color: grey;
-    font-size: 30px;
-    vertical-align: middle;
-  }
+.chat-message-right {
+    flex-direction: row-reverse;
+    margin-left: auto
+}
+.py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+.px-4 {
+    padding-right: 1.5rem!important;
+    padding-left: 1.5rem!important;
+}
+.flex-grow-0 {
+    flex-grow: 0!important;
+}
+.border-top {
+    border-top: 1px solid #dee2e6!important;
+}
 
-  .chat-box-tray #btn-multimedia,.chat-box-tray #btn-enviarm{
-    border: none;
-  }
+#btn-call,#btn-videocall,#btn-send{
+    background: rgb(53, 93, 138);
+    border:none;
+}
 
-  .chat-box-tray i:last-of-type {
-    margin-left: 25px;
-  }
+#btn-call:hover,#btn-videocall:hover{
+    background: rgb(143, 187, 236);
+}
