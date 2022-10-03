@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa');
+
+body
+{
+	background-color: #203349;
+}
+
+.Content_Tarea
+{
+	background-color: #264B79;
+	width: 90%;
+	position: absolute;
+	left: 5%;
+	top: 7%;
+	border-radius: 15px;
+	height: 630px;
+}
+
+.Content_Tarea h2, h3
+{
+	font-family: Changa;
+	padding-left: 25px;
+}
+
+.DescripcionT
+{
+	width: 40%;
+	padding-left: 25px;
+	font-family: Changa;
+}
+
+.File_Tarea
+{
+	display: none;
+}
+
+.File_Tarea_Label
+{
+	border: 0px;
+	border-radius: 5px;
+	padding: 5px 30px;
+	font-family: Changa;
+	font-size: 15px;
+	background-color: #05ACDD;
+	position: relative;
+	left: 32%;
+	top: 7%;
+}
+
+.Btn_Tarea
+{
+	border: 0px;
+	border-radius: 5px;
+	height: 39px;
+	width: 133px;
+	font-family: Changa;
+	font-size: 15px;
+	background-color: #D74816;
+	position: relative;
+	left: 32%;
+	top: 7%;
+}
+
+.File_Tarea_Label:hover
+{
+	background-color: #7ACAE2;
+}
+
+.Btn_Tarea:hover
+{
+	background-color: #E27A7A;
+}
+
+.Tarea_Entregada
+{
+	background-color: #3C76BF;
+	width: 30%;
+	height: 45px;
+	border-radius: 15px;
+	border: 1px solid #86BDFF;
+	position: relative;
+	left: 12%;
+	top: 7%;
+	overflow: ellipsis;
+}
+
+.Tarea_Entregada:hover
+{
+	background-color: #678EBE;
+}
+
+.Tarea_Entregada label
+{
+	font-family: Changa;
+	position: relative;
+	top: 10%;
+	left: 3%;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+    vertical-align: middle;
+	width: 75%;
+}
+
+.Tarea_Entregada button
+{
+	position: absolute;
+	top: 16%;
+	left: 87%;
+	background-color: #D74816;
+	border-radius: 5px;
+	border: 0px;
+	width: 35px;
+	height: 30px;
+}
+
+.Tarea_Entregada button:hover
+{
+	background-color: #E27A7A;
+}
+
+.Fecha_Tarea
+{
+	font-family: Changa;
+	position: absolute;
+	left: 80%;
+	bottom: 90%;
+	font-weight: bold;
+}
+
+.Fecha_Tarea_D
+{
+	font-family: Changa;
+	position: absolute;
+	left: 80%;
+	bottom: 85%;
+}
+
+.Puntos_Tarea
+{
+	font-family: Changa;
+	position: absolute;
+	left: 80%;
+	bottom: 80%;
+	font-weight: bold;
+}
+
+.Puntos_Tarea_P
+{
+	font-family: Changa;
+	position: absolute;
+	left: 80%;
+	bottom: 75%;
+}
+
+@media (max-width:1369px)
+{
+	.Fecha_Tarea
+	{
+		font-size: 14px;
+		position: absolute;
+		top: 2%;
+	}
+
+	.Fecha_Tarea_D
+	{
+		font-size: 14px;
+		position: absolute;
+		top: 10%;
+	}
+
+	.Puntos_Tarea
+	{
+		font-size: 14px;
+		position: absolute;
+		top: 23%;
+	}
+
+	.Puntos_Tarea_P
+	{
+		font-size: 14px;
+		position: absolute;
+		top: 28%;
+	}
+
+	.File_Tarea_Label
+	{
+		padding: 4px 20px;
+		position: absolute;
+		top: 60%;
+		left: 86%;
+	}
+
+	.Btn_Tarea
+	{
+		width: 113px;
+		position: absolute;
+		top: 68%;
+		left: 86%;
+	}
+
+	.Tarea_Entregada
+	{
+		position: absolute;
+		top: 48%;
+		left: 66%;
+		width: 30%;
+	}
+
+	.Tarea_Entregada label
+	{
+		font-size: 14px;
+		position: relative;
+		top: 25%;
+	}
+
+	.Tarea_Entregada button
+	{
+		position: absolute;
+		left: 80%;
+		width: 15%;
+		height: 57%;
+	}
+}
+
+@media (max-width:969px)
+{
+	.DescripcionT
+	{
+		font-size: 14px;
+	}
+
+	.Fecha_Tarea
+	{
+		font-size: 14px;
+		position: absolute;
+		top: 2%;
+	}
+
+	.Fecha_Tarea_D
+	{
+		font-size: 14px;
+		position: absolute;
+		top: 10%;
+	}
+
+	.Puntos_Tarea
+	{
+		font-size: 14px;
+		position: absolute;
+		top: 23%;
+	}
+
+	.Puntos_Tarea_P
+	{
+		font-size: 14px;
+		position: absolute;
+		top: 28%;
+	}
+
+	.File_Tarea_Label
+	{
+		padding: 4px 20px;
+		position: absolute;
+		top: 60%;
+		left: 80%;
+	}
+
+	.Btn_Tarea
+	{
+		width: 113px;
+		position: absolute;
+		top: 68%;
+		left: 80%;
+	}
+
+	.Tarea_Entregada
+	{
+		position: absolute;
+		top: 48%;
+		left: 66%;
+	}
+
+	.Tarea_Entregada label
+	{
+		font-size: 12px;
+		position: relative;
+		top: 25%;
+	}
+
+	.Tarea_Entregada button
+	{
+		position: absolute;
+		left: 80%;
+		width: 15%;
+		height: 57%;
+	}
+}
+
+@media (max-width:850px)
+{
+	.File_Tarea_Label
+	{
+		padding: 5px 13px;
+		position: absolute;
+		top: 60%;
+		left: 80%;
+		font-size: 13px;
+	}
+
+	.Btn_Tarea
+	{
+		width: 90px;
+		position: absolute;
+		top: 68%;
+		left: 80%;
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 550px)
+{
+	.File_Tarea_Label
+	{
+		padding: 5px 13px;
+		position: absolute;
+		top: 60%;
+		left: 80%;
+		font-size: 10px;
+	}
+
+	.Btn_Tarea
+	{
+		width: 75px;
+		height: 30px;
+		position: absolute;
+		top: 68%;
+		left: 80%;
+		font-size: 10px;
+	}
+
+	.DescripcionT
+	{
+		font-size: 12px;
+	}
+
+	.Tarea_Entregada label
+	{
+		font-size: 10px;
+	}
+}
