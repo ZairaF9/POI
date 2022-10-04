@@ -84,3 +84,12 @@ background: rgb(185, 194, 209);
 .px-publi {
 margin-left: 20px;
 }
+
+.dropdown-menu .submenu{
+    display: none;
+    position: absolute;
+}
+
+.dropdown-menu>li:hover>.submenu{
+    display: block;
+}
