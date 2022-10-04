@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa');
+
+body
+{
+	background-color: #203349;
+}
+
+.RegistroCont
+{
+	background-color: #264B79;
+	width: 40%;
+	height: 610px;
+	position: relative;
+	top: 35px;
+	border-radius: 15px;
+}
+
+.RegistroCont h2
+{
+	font-family: Changa;
+	font-size: 35px;
+	padding: 7px;
+}
+
+.Input_Registro
+{
+	border: 0px;
+	border-radius: 5px;
+	height: 35px;
+	width: 57%;
+	font-family: Changa;
+}
+
+.btn_Registro
+{
+	border: 0px;
+	border-radius: 5px;
+	height: 35px;
+	width: 57%;
+	font-family: Changa;
+	font-size: 15px;
+	background-color: #05ACDD;
+}
+
+.btn_Registro:hover, .Label_Registro:hover
+{
+	background-color: #7ACAE2;
+}
+
+.File_Registro
+{
+	display: none;
+}
+
+.Label_Registro
+{
+	border: 0px;
+	border-radius: 5px;
+	font-family: Changa;
+	font-size: 15px;
+	background-color: #05ACDD;
+}
+
+.RegistroCont img
+{
+	 border-radius: 50%;
+}
+
+@media (max-width:969px)
+{
+	.Label_Registro
+	{
+		padding: 5px 5px;
+		font-size: 10px;
+	}
+
+	.Input_Registro
+	{
+		font-size: 10px;
+	}
+
+	.RegistroCont
+	{
+		width: 70%;
+	}
+
+	.btn_Registro
+	{
+		font-size: 10px;
+	}
+}
+
+@media (min-width:970px)
+{
+	.Label_Registro
+	{
+		padding: 5px 30px;
+	}
+}
