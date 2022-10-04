@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa');
+
+header{
+    background: #264b79;
+    font-family: 'Changa', sans-serif;
+}
+
+#btn-search{
+    position: absolute;
+    
+}
+
+body{
+    background: rgb(216, 221, 228) !important;
+}
+
+
+
+li:hover{
+background: rgb(117, 150, 201);
+}
+
+h5,h6{
+    font-family: 'Changa', sans-serif;
+}
+
+#chat-friends:hover{
+background: rgb(185, 194, 209);
+}
+
+.chat-online {
+    color: #34ce57
+}
+
+.chat-offline {
+    color: #e4606d
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    max-height: 1200px;
+    
+}
+
+.chat-message-left,
+.chat-message-right {
+    display: flex;
+    flex-shrink: 0
+}
+
+.chat-message-left {
+    margin-right: auto
+}
+
+.chat-message-right {
+    flex-direction: row-reverse;
+    margin-left: auto
+}
+.py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+.px-4 {
+    padding-right: 1.5rem!important;
+    padding-left: 1.5rem!important;
+}
+.flex-grow-0 {
+    flex-grow: 0!important;
+}
+.border-top {
+    border-top: 1px solid #dee2e6!important;
+}
+
+#btn-call,#btn-videocall,#btn-send{
+    background: rgb(53, 93, 138);
+    border:none;
+}
+
+#btn-call:hover,#btn-videocall:hover{
+    background: rgb(143, 187, 236);
+}
+
+.px-publi {
+margin-left: 20px;
+}
