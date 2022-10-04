@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa');
+
+header{
+    background: #264b79;
+    font-family: 'Changa', sans-serif;
+}
+
+#btn-search{
+    position: absolute;
+    
+}
+
+body{
+    background: rgb(216, 221, 228) !important;
+}
+
+li:hover{
+background: rgb(117, 150, 201);
+}
+
+h2{
+    font-family: 'Changa', sans-serif;
+    text-align: start;
+    margin-left:5em;
+    margin-top: -5em;
+}
+
+#form-tarea{
+  margin-left: 30em;
+  margin-top: 8em;
+}
+
+#form-tarea  label{
+    font-family: 'Changa', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+#form-tarea input, #form-tarea select{
+    border-radius: 5px;
+}
+
+#form-tarea select{
+    margin-left: 2em;
+}
+
+#form-tarea #btn-crear-tarea{
+    font-family: 'Changa', sans-serif;
+    border-radius: 5px;
+    background: #203349;
+    color: #fff;
+    border: none;
+    font-size: 1.5em;
+    margin-top: 3em;
+    margin-left: 18em;
+    height: 60px;
+}
+
+#form-tarea #btn-crear-tarea:hover{
+    cursor: pointer;
+    background:rgb(117, 150, 201);
+}
+
+.dropdown-menu .submenu{
+    display: none;
+    position: absolute;
+}
+
+.dropdown-menu>li:hover>.submenu{
+    display: block;
+}
