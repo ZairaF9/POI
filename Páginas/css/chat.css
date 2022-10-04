@@ -78,3 +78,13 @@ background: rgb(185, 194, 209);
 #btn-call:hover,#btn-videocall:hover{
     background: rgb(143, 187, 236);
 }
+
+
+.dropdown-menu .submenu{
+    display: none;
+    position: absolute;
+}
+
+.dropdown-menu>li:hover>.submenu{
+    display: block;
+}
