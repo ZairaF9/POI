@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Changa', sans-serif;
+}
+
+header{
+    background: #264b79;
+    font-family: 'Changa', sans-serif;
+}
+
+body{
+    background: #203349 !important;
+}
+
+li:hover{
+    background: rgb(117, 150, 201);
+    }
+
+.container{
+    margin-left: 120px;
+    padding: 0 2.5%;
+}
+
+
+.row{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1{
+    flex-basis: 65%;
+}
+
+
+
+.host-img{
+    width: 720%;
+    border-radius: 15px;
+   margin-top: 5em;
+}
+
+.host-img2{
+    width: 720%;
+    border-radius: 15px;
+   margin-top: -40em;
+   margin-left: 50em;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0em ;
+    position: absolute;
+    right:46em;
+   
+}
+
+@media screen and (max-width:800px){
+    .host-img2{
+       margin-top: -34em;
+       margin-left: 40em;
+    }
+
+    .controls{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -3em ;
+        margin-right: -15em;
+        
+    }
+}
+
+@media screen and (max-width:1200px){
+    .host-img2{
+       margin-top: -27em;
+       margin-left: 35em;
+    }
+
+    .controls{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0em ;
+        margin-right: -20em;
+        
+    }
+}
+
+@media screen and (max-width:1400px){
+    .host-img2{
+       margin-top: -33em;
+       margin-left: 40em;
+    }
+
+    .controls{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0em ;
+        margin-right: -15em;
+        
+    }
+}
+
+.controls img{
+    width:40px;
+    margin:20px 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.controls .call-icon{
+    width:70px;
+}
+
+.controls img:hover{
+    transform: translateY(-10px);
+}
