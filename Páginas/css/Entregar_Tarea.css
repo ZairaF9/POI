@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa');
 
-body
-{
-	background-color: #203349;
+header{
+    background: #264b79;
+    font-family: 'Changa', sans-serif;
 }
+
+#btn-search{
+    position: absolute;
+    
+}
+
+body{
+    background: #203349 !important;
+}
+
+li:hover{
+background: rgb(117, 150, 201);
+}
+
 
 .Content_Tarea
 {
