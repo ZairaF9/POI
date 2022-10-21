@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    <h1>Chat</h1>
+    <ul></ul>
+    <br><br>
+    <form action="">
+        <input type="text" id="chat-input" placeholder="texto..."><br>
+        <button id="enviar-chat" type="submit">Enviar</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        const form = document.querySelector('form');
+        const input = document.querySelector('input');
+        const mensajes = document.querySelector('ul');
+
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault();
+            if(input.value)
+            {
+                socket.emit('chat', input.value);
+                input.value = '';
+            }
+        })
+
+        socket.on('chat', (message)=>{
+            var item = document.createElement("li");
+            item.textContent = message;
+            mensajes.appendChild(item);
+            window.scrollTo(0, document.body.scrollHeight);
+        });
+
+    </script>
+</body>
+</html>
